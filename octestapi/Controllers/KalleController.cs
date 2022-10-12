@@ -8,7 +8,7 @@ public class KalleController : ControllerBase
 {
     [HttpGet]
     [Route("hello")]
-    public async Task<ActionResult<string>> Hello([FromQuery] string name)
+    public async Task<ActionResult<string>> Hello([FromQuery] string? name)
     {
         var result = "Hello";
         if (!string.IsNullOrEmpty(name))
